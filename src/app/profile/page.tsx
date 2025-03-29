@@ -1,18 +1,21 @@
 'use client'
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+// import { useEffect } from 'react'
+// import { useRouter } from 'next/navigation'
 import ProfileCard from '@/app/components/ProfileCard'
 
 export default function ProfilePage() {
-  const router = useRouter()
 
-  useEffect(() => {
-    const isAuthenticated = localStorage.getItem('isAuthenticated')
-    if (!isAuthenticated) {
-      router.push('/login')
-    }
-  }, [router])
+
+  // Burda yoruma aldığım yerler şimdilik yorumda çünkü api den gerçek kullanıcı şifre almadık profile card göremeyiz bu yüzden
+  // const router = useRouter()
+
+  // useEffect(() => {
+  //   const isAuthenticated = localStorage.getItem('isAuthenticated')
+  //   if (!isAuthenticated) {
+  //     router.push('/login')
+  //   }
+  // }, [router])
 
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
